@@ -27,6 +27,9 @@ ActiveRecord::Schema[7.1].define(version: 2024_02_05_161310) do
   end
 
   create_table "roles", force: :cascade do |t|
+    t.integer "movie_id"
+    t.integer "actor_id"
+    t.string "character_name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

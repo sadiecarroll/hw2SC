@@ -70,6 +70,7 @@
 # Delete existing data, so you'll start fresh each time this script is run.
 # Use `Model.destroy_all` code.
 # TODO!
+
 Studio.destroy_all
 Movie.destroy_all
 Actor.destroy_all
@@ -280,6 +281,7 @@ role["actor_id"] = anne ["id"]
 role["character_name"] = "Selina Kyle"
 role.save
 
+puts "There are #{Role.all.count} roles"
 
 
 # Prints a header for the movies output
@@ -289,6 +291,11 @@ puts ""
 
 # Query the movies data and loop through the results to display the movies output.
 # TODO!
+
+# loop through movies
+for title in Movie
+   puts "#{title["title"]}"
+end
 
 # Prints a header for the cast output
 puts ""
