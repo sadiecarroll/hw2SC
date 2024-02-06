@@ -296,9 +296,8 @@ puts ""
 
 movies = Movie.all
 for title in movies
-   puts "#{title["title"]} #{title["year released"]} #{title["rated"]} #{title["studio"]}"
+   puts "#{title["title"]} #{title["year released"]} #{title["rated"]} #{title["studio_id"]}"
 end
-
 
 # Prints a header for the cast output
 puts ""
